@@ -2,7 +2,7 @@ program projetoInicial;
 
 uses
   Vcl.Forms,
-  inicial in 'inicial.pas' {Form1};
+  Primeiro_Formulario in 'Primeiro_Formulario.pas' {Form1};
 
 {$R *.res}
 

@@ -1,6 +1,6 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
-        <ProjectGuid>{F3F2BD38-0276-4817-9BF7-8149840D10F4}</ProjectGuid>
+        <ProjectGuid>{A29DBBF2-69DA-43DC-A8B8-130AA24950A5}</ProjectGuid>
         <ProjectVersion>19.1</ProjectVersion>
         <FrameworkType>VCL</FrameworkType>
         <Base>True</Base>
@@ -98,7 +98,7 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="inicial.pas">
+        <DCCReference Include="Primeiro_Formulario.pas">
             <Form>Form1</Form>
             <FormType>dfm</FormType>
         </DCCReference>
