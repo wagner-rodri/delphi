@@ -1,7 +1,7 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'Teste Inicial'
+  Caption = 'Tela Inicial'
   ClientHeight = 180
   ClientWidth = 360
   Color = clBtnFace
@@ -13,20 +13,4 @@ object Form1: TForm1
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object Edit1: TEdit
-    Left = 80
-    Top = 80
-    Width = 121
-    Height = 21
-    TabOrder = 0
-    Text = 'Edit1'
-  end
-  object Button1: TButton
-    Left = 80
-    Top = 107
-    Width = 75
-    Height = 25
-    Caption = 'Button1'
-    TabOrder = 1
-  end
 end
