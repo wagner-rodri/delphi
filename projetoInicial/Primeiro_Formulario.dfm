@@ -217,6 +217,7 @@ object Cad_User: TCad_User
     Cursor = crIBeam
     Caption = 'Salvar'
     TabOrder = 0
+    OnClick = btn_salvarClick
   end
   object btn_deletar: TButton
     Left = 32
@@ -234,12 +235,28 @@ object Cad_User: TCad_User
     Caption = 'Editar'
     TabOrder = 2
   end
-  object txt_edit: TEdit
-    Left = 121
-    Top = 135
+  object txt_nome: TEdit
+    Left = 201
+    Top = 66
     Width = 121
     Height = 21
     TabOrder = 3
-    Text = 'txt_edit'
+    Text = 'txt_nome'
+  end
+  object txt_nome2: TEdit
+    Left = 201
+    Top = 93
+    Width = 121
+    Height = 21
+    TabOrder = 4
+    Text = 'txt_nome'
+  end
+  object txt_nome3: TEdit
+    Left = 201
+    Top = 120
+    Width = 121
+    Height = 21
+    TabOrder = 5
+    Text = 'txt_nome'
   end
 end
