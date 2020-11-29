@@ -2,8 +2,8 @@ object Cad_User: TCad_User
   Left = 0
   Top = 0
   Caption = 'Tela Inicial'
-  ClientHeight = 180
-  ClientWidth = 360
+  ClientHeight = 252
+  ClientWidth = 416
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -209,6 +209,12 @@ object Cad_User: TCad_User
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000000000000000000000005BF6FFFFFFFFFF000000}
   end
+  object lb_valor: TLabel
+    Left = 32
+    Top = 157
+    Width = 3
+    Height = 13
+  end
   object btn_salvar: TButton
     Left = 32
     Top = 64
@@ -226,6 +232,7 @@ object Cad_User: TCad_User
     Height = 25
     Caption = 'Deletar'
     TabOrder = 1
+    OnClick = btn_deletarClick
   end
   object btn_editar: TButton
     Left = 32
@@ -234,6 +241,7 @@ object Cad_User: TCad_User
     Height = 25
     Caption = 'Editar'
     TabOrder = 2
+    OnClick = btn_editarClick
   end
   object txt_nome: TEdit
     Left = 201
