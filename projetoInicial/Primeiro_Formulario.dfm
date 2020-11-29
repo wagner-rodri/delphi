@@ -331,4 +331,13 @@ object Cad_User: TCad_User
     Height = 21
     TabOrder = 9
   end
+  object btn_tela_2: TButton
+    Left = 201
+    Top = 290
+    Width = 75
+    Height = 25
+    Caption = 'Tela 2'
+    TabOrder = 10
+    OnClick = btn_calcularClick
+  end
 end

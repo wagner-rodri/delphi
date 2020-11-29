@@ -26,6 +26,7 @@ type
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;
+    btn_tela_2: TButton;
     procedure btn_salvarClick(Sender: TObject);
     procedure btn_deletarClick(Sender: TObject);
     procedure btn_editarClick(Sender: TObject);
