@@ -2,8 +2,8 @@ object Cad_User: TCad_User
   Left = 0
   Top = 0
   Caption = 'Tela Inicial'
-  ClientHeight = 252
-  ClientWidth = 416
+  ClientHeight = 380
+  ClientWidth = 432
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -208,12 +208,49 @@ object Cad_User: TCad_User
       0000000000000000000000000000000000A4F6FFFFFFFF000000085200000000
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000000000000000000000005BF6FFFFFFFFFF000000}
+    OnClick = btn_icone_salvarClick
   end
   object lb_valor: TLabel
-    Left = 32
-    Top = 157
-    Width = 3
+    Left = 328
+    Top = 64
+    Width = 33
     Height = 13
+    Caption = 'Valor 1'
+  end
+  object Label2: TLabel
+    Left = 328
+    Top = 93
+    Width = 33
+    Height = 13
+    Caption = 'Valor 2'
+  end
+  object Label3: TLabel
+    Left = 328
+    Top = 123
+    Width = 24
+    Height = 13
+    Caption = 'Total'
+  end
+  object Label4: TLabel
+    Left = 328
+    Top = 176
+    Width = 33
+    Height = 13
+    Caption = 'Valor 1'
+  end
+  object Label5: TLabel
+    Left = 328
+    Top = 205
+    Width = 33
+    Height = 13
+    Caption = 'Valor 2'
+  end
+  object Label6: TLabel
+    Left = 328
+    Top = 235
+    Width = 24
+    Height = 13
+    Caption = 'Total'
   end
   object btn_salvar: TButton
     Left = 32
@@ -249,7 +286,6 @@ object Cad_User: TCad_User
     Width = 121
     Height = 21
     TabOrder = 3
-    Text = 'txt_nome'
   end
   object txt_nome2: TEdit
     Left = 201
@@ -257,7 +293,6 @@ object Cad_User: TCad_User
     Width = 121
     Height = 21
     TabOrder = 4
-    Text = 'txt_nome'
   end
   object txt_nome3: TEdit
     Left = 201
@@ -265,6 +300,35 @@ object Cad_User: TCad_User
     Width = 121
     Height = 21
     TabOrder = 5
-    Text = 'txt_nome'
+  end
+  object btn_calcular: TButton
+    Left = 201
+    Top = 259
+    Width = 75
+    Height = 25
+    Caption = 'Calcular'
+    TabOrder = 6
+    OnClick = btn_calcularClick
+  end
+  object txt_vlr_1: TEdit
+    Left = 201
+    Top = 178
+    Width = 121
+    Height = 21
+    TabOrder = 7
+  end
+  object txt_vlr_2: TEdit
+    Left = 201
+    Top = 205
+    Width = 121
+    Height = 21
+    TabOrder = 8
+  end
+  object txt_vlr_total: TEdit
+    Left = 201
+    Top = 232
+    Width = 121
+    Height = 21
+    TabOrder = 9
   end
 end
