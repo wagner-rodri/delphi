@@ -17,9 +17,9 @@ object Cad_User: TCad_User
   object Label1: TLabel
     Left = 24
     Top = 24
-    Width = 176
+    Width = 198
     Height = 23
-    Caption = 'Cadastro de Usu'#225'rios'
+    Caption = 'Vari'#225'veis e Condicionais'
     Color = clBlack
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clGray
