@@ -12,6 +12,7 @@ object frm_tela2: Tfrm_tela2
   Font.Style = []
   OldCreateOrder = False
   Position = poDesktopCenter
+  OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
   object frm_tela_2: TLabel

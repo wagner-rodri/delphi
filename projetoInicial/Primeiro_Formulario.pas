@@ -125,7 +125,8 @@ procedure TCad_User.btn_salvarClick(Sender: TObject);
 
 procedure TCad_User.btn_tela_2Click(Sender: TObject);
 begin
-  frm_tela2 := Tfrm_tela2(self);
+  frm_tela2 := Tfrm_tela2.Create(self);
+  frm_tela2.ShowModal;
 end;
 
 end.
