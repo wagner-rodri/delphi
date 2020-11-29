@@ -48,7 +48,7 @@ implementation
 {$R *.dfm}
 
 procedure TCad_User.btn_calcularClick(Sender: TObject);
-var vlr1, vlr2, total:double;
+var vlr1, vlr2, total, x:double;
 begin
   vlr1 := StrToFloat(txt_vlr_1.Text);
   vlr2 := StrToFloat(txt_vlr_2.Text);
@@ -56,6 +56,11 @@ begin
   total := vlr1 + vlr2;
   txt_vlr_total.Text := FloatToStr(total);
 
+  x := total;
+  if (x > 50) Then
+  begin
+    ShowMessage('O valor é maior que 50')
+  end;
 end;
 
 procedure TCad_User.btn_deletarClick(Sender: TObject);
