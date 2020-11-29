@@ -32,6 +32,7 @@ type
     procedure btn_editarClick(Sender: TObject);
     procedure btn_icone_salvarClick(Sender: TObject);
     procedure btn_calcularClick(Sender: TObject);
+    procedure btn_tela_2Click(Sender: TObject);
   private
     var nome:string;
     var sobrenome, endereco:string;
@@ -47,6 +48,8 @@ var
 implementation
 
 {$R *.dfm}
+
+uses Tela2;
 
 procedure TCad_User.btn_calcularClick(Sender: TObject);
   var vlr1, vlr2, total, media:double;
@@ -119,5 +122,10 @@ procedure TCad_User.btn_salvarClick(Sender: TObject);
     txt_nome2.Text := sobrenome;
     txt_nome3.Text := endereco;
   end;
+
+procedure TCad_User.btn_tela_2Click(Sender: TObject);
+begin
+  frm_tela2 := Tfrm_tela2(self);
+end;
 
 end.

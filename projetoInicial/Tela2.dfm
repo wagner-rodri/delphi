@@ -1,7 +1,7 @@
-object Form1: TForm1
+object frm_tela2: Tfrm_tela2
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'frm_tela2'
   ClientHeight = 299
   ClientWidth = 635
   Color = clBtnFace

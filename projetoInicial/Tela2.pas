@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
 type
-  TForm1 = class(TForm)
+  Tfrm_tela2 = class(TForm)
     frm_tela_2: TLabel;
   private
     { Private declarations }
@@ -16,7 +16,7 @@ type
   end;
 
 var
-  Form1: TForm1;
+  frm_tela2: Tfrm_tela2;
 
 implementation
 

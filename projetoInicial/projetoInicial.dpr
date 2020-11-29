@@ -2,7 +2,8 @@ program projetoInicial;
 
 uses
   Vcl.Forms,
-  Primeiro_Formulario in 'Primeiro_Formulario.pas' {Cad_User};
+  Primeiro_Formulario in 'Primeiro_Formulario.pas' {Cad_User},
+  Tela2 in 'Tela2.pas' {frm_tela2};
 
 {$R *.res}
 
