@@ -48,7 +48,7 @@ implementation
 {$R *.dfm}
 
 procedure TCad_User.btn_calcularClick(Sender: TObject);
-var vlr1, vlr2, total, x:double;
+var vlr1, vlr2, total, x, media:double;
 begin
   vlr1 := StrToFloat(txt_vlr_1.Text);
   vlr2 := StrToFloat(txt_vlr_2.Text);
@@ -56,10 +56,14 @@ begin
   total := vlr1 + vlr2;
   txt_vlr_total.Text := FloatToStr(total);
 
-  x := total;
-  if (x > 50) Then
+  media := 60;
+  if (total >= media) AND (total > 80) Then
   begin
-    ShowMessage('O valor é maior que 50')
+    ShowMessage('O aluno obteve média de ' + FloatToStr(total) + ', portanto está aprovado!');
+  end
+  Else
+  begin
+    ShowMessage('O aluno obteve média de ' + FloatToStr(total) + ', portanto está Reprovado! =(');
   end;
 end;
 
