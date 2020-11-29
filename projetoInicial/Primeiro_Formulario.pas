@@ -67,9 +67,13 @@ begin
       ShowMessage('O aluno obteve média de ' + FloatToStr(total) + ', portanto está Reprovado! =(');
     end;
 
-  for cont := 1 to 5 do
+  for cont := 5 DownTo 0 do
     begin
-    ShowMessage(IntToStr(cont));
+      ShowMessage(IntToStr(cont));
+      if cont <= 0 then
+        begin
+          ShowMessage('o contador chegou a 0')
+        end;
     end;
 
 
