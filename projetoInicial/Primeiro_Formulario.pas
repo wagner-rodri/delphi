@@ -48,7 +48,7 @@ implementation
 {$R *.dfm}
 
 procedure TCad_User.btn_calcularClick(Sender: TObject);
-var vlr1, vlr2, total, x, media:double;
+var vlr1, vlr2, total, media:double;
 var cont: integer;
 begin
   vlr1 := StrToFloat(txt_vlr_1.Text);
@@ -67,15 +67,21 @@ begin
       ShowMessage('O aluno obteve média de ' + FloatToStr(total) + ', portanto está Reprovado! =(');
     end;
 
-  for cont := 5 DownTo 0 do
+  {for cont := 5 DownTo 0 do
     begin
       ShowMessage(IntToStr(cont));
       if cont <= 0 then
         begin
           ShowMessage('o contador chegou a 0')
         end;
-    end;
+    end;}
 
+  cont := 1;
+  while cont <= 5 do
+    begin
+      ShowMessage(IntToStr(cont));
+      inc(cont);
+    end;
 
 end;
 
