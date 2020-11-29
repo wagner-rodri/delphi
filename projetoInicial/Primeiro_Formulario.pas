@@ -49,6 +49,7 @@ implementation
 
 procedure TCad_User.btn_calcularClick(Sender: TObject);
 var vlr1, vlr2, total, x, media:double;
+var cont: integer;
 begin
   vlr1 := StrToFloat(txt_vlr_1.Text);
   vlr2 := StrToFloat(txt_vlr_2.Text);
@@ -58,13 +59,20 @@ begin
 
   media := 60;
   if (total >= media) AND (total > 80) Then
-  begin
-    ShowMessage('O aluno obteve média de ' + FloatToStr(total) + ', portanto está aprovado!');
-  end
+    begin
+      ShowMessage('O aluno obteve média de ' + FloatToStr(total) + ', portanto está aprovado!');
+    end
   Else
-  begin
-    ShowMessage('O aluno obteve média de ' + FloatToStr(total) + ', portanto está Reprovado! =(');
-  end;
+    begin
+      ShowMessage('O aluno obteve média de ' + FloatToStr(total) + ', portanto está Reprovado! =(');
+    end;
+
+  for cont := 1 to 5 do
+    begin
+    ShowMessage(IntToStr(cont));
+    end;
+
+
 end;
 
 procedure TCad_User.btn_deletarClick(Sender: TObject);
