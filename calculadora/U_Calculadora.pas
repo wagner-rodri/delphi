@@ -59,31 +59,57 @@ end;
 
 procedure TForm1.btn_igualClick(Sender: TObject);
   var n1, n2 : double;
+  var x : Char;
   begin
     n1 := StrToFloat(txt_num_1.Text);
     n2 := StrToFloat(txt_num_2.Text);
 
     // Efetuando a soma
 
-    if (lb_operador.Text = '+') Then
+    {if (lb_operador.Text = '+') Then
       begin
         ShowMessage (FloatToStr(n1 + n2));
       end;
 
+    // Efetuando a subtração
     if (lb_operador.Text = '-') Then
       begin
         ShowMessage (FloatToStr(n1 - n2));
       end;
 
+    // Efetuando a multiplicação
     if (lb_operador.Text = 'x') Then
       begin
         ShowMessage (FloatToStr(n1 * n2));
       end;
 
+    // Efetuando a divisão
     if (lb_operador.Text = '/') Then
       begin
         ShowMessage (FloatToStr(n1 / n2));
+      end;}
+
+    // Utilização do Switch
+    x := lb_operador.Text[1];
+    case x of
+      '+':
+      begin
+        ShowMessage (FloatToStr(n1 + n2));
       end;
+      'x':
+      begin
+        ShowMessage (FloatToStr(n1 * n2));
+      end;
+      '-':
+      begin
+        ShowMessage (FloatToStr(n1 - n2));
+      end;
+      '/':
+      begin
+        ShowMessage (FloatToStr(n1 / n2));
+      end;
+    end;
+
   end;
 
 procedure TForm1.btn_multiClick(Sender: TObject);
