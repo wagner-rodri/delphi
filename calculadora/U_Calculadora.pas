@@ -59,10 +59,32 @@ end;
 
 procedure TForm1.btn_igualClick(Sender: TObject);
   var n1, n2 : double;
-begin
-  n1 := StrToFloat(txt_num_1.Text);
-  n2 := StrToFloat(txt_num_2.Text);
-end;
+  begin
+    n1 := StrToFloat(txt_num_1.Text);
+    n2 := StrToFloat(txt_num_2.Text);
+
+    // Efetuando a soma
+
+    if (lb_operador.Text = '+') Then
+      begin
+        ShowMessage (FloatToStr(n1 + n2));
+      end;
+
+    if (lb_operador.Text = '-') Then
+      begin
+        ShowMessage (FloatToStr(n1 - n2));
+      end;
+
+    if (lb_operador.Text = 'x') Then
+      begin
+        ShowMessage (FloatToStr(n1 * n2));
+      end;
+
+    if (lb_operador.Text = '/') Then
+      begin
+        ShowMessage (FloatToStr(n1 / n2));
+      end;
+  end;
 
 procedure TForm1.btn_multiClick(Sender: TObject);
   begin
