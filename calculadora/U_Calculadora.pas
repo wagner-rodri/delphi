@@ -28,13 +28,14 @@ type
     btn_4: TButton;
     caixa_topo: TLayout;
     lb_operador: TLabel;
-    txt_num_1: TEdit;
-    txt_num_2: TEdit;
+    lb_num1: TLabel;
+    lb_num2: TLabel;
     procedure btn_subClick(Sender: TObject);
     procedure btn_somarClick(Sender: TObject);
     procedure btn_divClick(Sender: TObject);
     procedure btn_multiClick(Sender: TObject);
     procedure btn_igualClick(Sender: TObject);
+    procedure btn_1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -47,6 +48,20 @@ var
 implementation
 
 {$R *.fmx}
+
+procedure TForm1.btn_1Click(Sender: TObject);
+begin
+
+  if lb_operador.Text = '.' then
+    begin
+      lb_num1.Text := lb_num1.Text + '1';
+    end
+  else
+    begin
+      lb_num2.Text := lb_num2.Text + '1';
+    end;
+
+end;
 
 procedure TForm1.btn_divClick(Sender: TObject);
 begin
@@ -61,8 +76,8 @@ procedure TForm1.btn_igualClick(Sender: TObject);
   var n1, n2 : double;
   var x : Char;
   begin
-    n1 := StrToFloat(txt_num_1.Text);
-    n2 := StrToFloat(txt_num_2.Text);
+    n1 := StrToFloat(lb_num1.Text);
+    n2 := StrToFloat(lb_num2.Text);
 
     // Efetuando a soma
 
@@ -91,6 +106,7 @@ procedure TForm1.btn_igualClick(Sender: TObject);
 
     // Utilização do Switch
     x := lb_operador.Text[1];
+
     case x of
       '+':
       begin
@@ -110,6 +126,9 @@ procedure TForm1.btn_igualClick(Sender: TObject);
       end;
     end;
 
+    lb_operador.Text := '.';
+    lb_num1.Text := '';
+    lb_num2.Text := '';
   end;
 
 procedure TForm1.btn_multiClick(Sender: TObject);

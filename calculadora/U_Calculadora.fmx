@@ -33,6 +33,7 @@ object Form1: TForm1
       Size.PlatformDefault = False
       TabOrder = 14
       Text = '1'
+      OnClick = btn_1Click
     end
     object btn_ponto: TButton
       Position.X = 16.000000000000000000
@@ -174,7 +175,7 @@ object Form1: TForm1
       object lb_operador: TLabel
         StyledSettings = [Family, Style, FontColor]
         Position.X = 72.000000000000000000
-        Position.Y = 16.000000000000000000
+        Position.Y = 24.000000000000000000
         Size.Width = 41.000000000000000000
         Size.Height = 41.000000000000000000
         Size.PlatformDefault = False
@@ -183,23 +184,27 @@ object Form1: TForm1
         Text = '.'
         TabOrder = 0
       end
-      object txt_num_1: TEdit
-        Touch.InteractiveGestures = [LongTap, DoubleTap]
+      object lb_num1: TLabel
+        StyledSettings = [Family, Style, FontColor]
+        Position.X = 24.000000000000000000
+        Position.Y = 24.000000000000000000
+        Size.Width = 57.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 30.000000000000000000
+        TextSettings.HorzAlign = Center
         TabOrder = 2
-        Position.X = 32.000000000000000000
-        Position.Y = 32.000000000000000000
-        Size.Width = 33.000000000000000000
-        Size.Height = 22.000000000000000000
-        Size.PlatformDefault = False
       end
-      object txt_num_2: TEdit
-        Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 1
-        Position.X = 120.000000000000000000
-        Position.Y = 32.000000000000000000
-        Size.Width = 33.000000000000000000
-        Size.Height = 22.000000000000000000
+      object lb_num2: TLabel
+        StyledSettings = [Family, Style, FontColor]
+        Position.X = 104.000000000000000000
+        Position.Y = 24.000000000000000000
+        Size.Width = 57.000000000000000000
+        Size.Height = 41.000000000000000000
         Size.PlatformDefault = False
+        TextSettings.Font.Size = 30.000000000000000000
+        TextSettings.HorzAlign = Center
+        TabOrder = 1
       end
     end
   end
