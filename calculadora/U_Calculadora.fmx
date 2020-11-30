@@ -2,15 +2,16 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Calculadora'
-  ClientHeight = 320
-  ClientWidth = 301
+  ClientHeight = 266
+  ClientWidth = 270
+  Position = DesktopCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object caixa_botoes: TLayout
     Position.X = 8.000000000000000000
-    Position.Y = 8.000000000000000000
+    Position.Y = -48.000000000000000000
     Size.Width = 257.000000000000000000
     Size.Height = 305.000000000000000000
     Size.PlatformDefault = False
@@ -177,15 +178,15 @@ object Form1: TForm1
     end
     object caixa_topo: TLayout
       Position.X = 16.000000000000000000
-      Position.Y = 8.000000000000000000
+      Position.Y = 56.000000000000000000
       Size.Width = 185.000000000000000000
-      Size.Height = 97.000000000000000000
+      Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 17
       object lb_operador: TLabel
         StyledSettings = [Family, Style, FontColor]
         Position.X = 72.000000000000000000
-        Position.Y = 24.000000000000000000
+        Position.Y = 8.000000000000000000
         Size.Width = 41.000000000000000000
         Size.Height = 41.000000000000000000
         Size.PlatformDefault = False
@@ -197,7 +198,7 @@ object Form1: TForm1
       object lb_num1: TLabel
         StyledSettings = [Family, Style, FontColor]
         Position.X = 24.000000000000000000
-        Position.Y = 24.000000000000000000
+        Position.Y = 8.000000000000000000
         Size.Width = 57.000000000000000000
         Size.Height = 41.000000000000000000
         Size.PlatformDefault = False
@@ -208,7 +209,7 @@ object Form1: TForm1
       object lb_num2: TLabel
         StyledSettings = [Family, Style, FontColor]
         Position.X = 104.000000000000000000
-        Position.Y = 24.000000000000000000
+        Position.Y = 8.000000000000000000
         Size.Width = 57.000000000000000000
         Size.Height = 41.000000000000000000
         Size.PlatformDefault = False
@@ -227,6 +228,16 @@ object Form1: TForm1
       TabOrder = 9
       Text = '7'
       OnClick = btn_apagarClick
+    end
+    object btn_ce: TButton
+      Position.X = 208.000000000000000000
+      Position.Y = 160.000000000000000000
+      Size.Width = 41.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 18
+      Text = 'CE'
+      OnClick = btn_ceClick
     end
   end
 end

@@ -31,6 +31,7 @@ type
     lb_num1: TLabel;
     lb_num2: TLabel;
     btn_apagar: TButton;
+    btn_ce: TButton;
     procedure btn_subClick(Sender: TObject);
     procedure btn_somarClick(Sender: TObject);
     procedure btn_divClick(Sender: TObject);
@@ -48,6 +49,7 @@ type
     procedure btn_8Click(Sender: TObject);
     procedure btn_9Click(Sender: TObject);
     procedure btn_pontoClick(Sender: TObject);
+    procedure btn_ceClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -195,6 +197,13 @@ begin
     end;
 end;
 
+procedure TForm1.btn_ceClick(Sender: TObject);
+begin
+    lb_operador.Text := '.';
+    lb_num1.Text := '';
+    lb_num2.Text := '';
+end;
+
 procedure TForm1.btn_divClick(Sender: TObject);
 begin
   lb_operador.Text := '/';
@@ -257,7 +266,10 @@ procedure TForm1.btn_igualClick(Sender: TObject);
         ShowMessage (FloatToStr(n1 / n2));
       end;
     end;
-
+    btn_somar.Enabled := true;
+    btn_sub.Enabled := true;
+    btn_multi.Enabled := true;
+    btn_div.Enabled := true;
     lb_operador.Text := '.';
     lb_num1.Text := '';
     lb_num2.Text := '';
