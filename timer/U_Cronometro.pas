@@ -72,7 +72,7 @@ begin
       btn_play.Enabled := False;
       lb_segundos.Caption := '0';
       lb_minutos.Caption := '0';
-      txt_tempo.Text := '0';
+      txt_tempo.Text := '';
     end;
 
 end;
