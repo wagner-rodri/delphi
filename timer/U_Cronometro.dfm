@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 129
-  ClientWidth = 265
+  ClientHeight = 146
+  ClientWidth = 125
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,8 +15,8 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object lb_dois_pontos: TLabel
-    Left = 84
-    Top = 16
+    Left = 52
+    Top = 40
     Width = 14
     Height = 48
     Caption = ':'
@@ -28,8 +28,8 @@ object Form1: TForm1
     ParentFont = False
   end
   object lb_minutos: TLabel
-    Left = 32
-    Top = 16
+    Left = 24
+    Top = 40
     Width = 22
     Height = 48
     Caption = '0'
@@ -41,11 +41,12 @@ object Form1: TForm1
     ParentFont = False
   end
   object btn_play: TSpeedButton
-    Left = 32
-    Top = 86
-    Width = 24
-    Height = 18
+    Left = 24
+    Top = 94
+    Width = 40
+    Height = 34
     Cursor = crHandPoint
+    Enabled = False
     Glyph.Data = {
       02070000424D0207000000000000420000002800000018000000120000000100
       200003000000C0060000130B0000130B000000000000000000000000FF0000FF
@@ -107,8 +108,8 @@ object Form1: TForm1
     OnClick = btn_playClick
   end
   object lb_segundos: TLabel
-    Left = 128
-    Top = 16
+    Left = 72
+    Top = 40
     Width = 22
     Height = 48
     Caption = '0'
@@ -120,10 +121,10 @@ object Form1: TForm1
     ParentFont = False
   end
   object MediaPlayer1: TMediaPlayer
-    Left = 157
-    Top = 86
-    Width = 57
-    Height = 30
+    Left = 144
+    Top = 94
+    Width = 65
+    Height = 34
     VisibleButtons = [btPlay, btPause]
     DoubleBuffered = True
     Visible = False
@@ -131,23 +132,30 @@ object Form1: TForm1
     TabOrder = 0
   end
   object btn_abrir: TButton
-    Left = 62
-    Top = 86
-    Width = 75
-    Height = 19
+    Left = 70
+    Top = 94
+    Width = 36
+    Height = 34
     Caption = 'Abrir'
     TabOrder = 1
     OnClick = btn_abrirClick
+  end
+  object txt_tempo: TEdit
+    Left = 24
+    Top = 13
+    Width = 82
+    Height = 21
+    TabOrder = 2
   end
   object t_timer: TTimer
     Enabled = False
     Interval = 10
     OnTimer = t_timerTimer
-    Left = 184
-    Top = 32
+    Left = 144
+    Top = 56
   end
   object OpenDialog1: TOpenDialog
-    Left = 224
-    Top = 32
+    Left = 176
+    Top = 56
   end
 end

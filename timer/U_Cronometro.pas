@@ -17,6 +17,7 @@ type
     lb_segundos: TLabel;
     btn_abrir: TButton;
     OpenDialog1: TOpenDialog;
+    txt_tempo: TEdit;
     procedure t_timerTimer(Sender: TObject);
     procedure btn_playClick(Sender: TObject);
     procedure btn_abrirClick(Sender: TObject);
@@ -38,6 +39,7 @@ begin
   if OpenDialog1.Execute then
     begin
       MediaPlayer1.FileName := OpenDialog1.FileName;
+      btn_play.Enabled := True;
     end;
 
 end;
@@ -62,11 +64,15 @@ begin
       lb_minutos.Caption := intToStr(strToInt(lb_minutos.Caption) + 1);
     end;
 
-  if lb_minutos.Caption = '1' then
+  if lb_minutos.Caption = txt_tempo.Text then
     begin
       t_timer.Enabled := false;
       MediaPlayer1.Open;
       MediaPlayer1.Play;
+      btn_play.Enabled := False;
+      lb_segundos.Caption := '0';
+      lb_minutos.Caption := '0';
+      txt_tempo.Text := '0';
     end;
 
 end;
