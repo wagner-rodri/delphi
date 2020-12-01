@@ -36,13 +36,21 @@ begin
 end;
 
 procedure TForm1.t_timerTimer(Sender: TObject);
-  var seg, min, cont : Integer;
+  var seg, min, cont, cont_min: Integer;
 begin
   seg := strToInt(lb_segundos.Caption);
   min := strToInt(lb_minutos.Caption);
   cont := seg + 1;
 
   lb_segundos.Caption := intToStr(cont);
+
+
+  if lb_segundos.Caption = '60' then
+    begin
+      lb_segundos.Caption := '0';
+      lb_minutos.Caption := intToStr(strToInt(lb_minutos.Caption) + 1);
+    end;
+
 end;
 
 end.
