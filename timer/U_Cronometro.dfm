@@ -120,8 +120,8 @@ object Form1: TForm1
     ParentFont = False
   end
   object MediaPlayer1: TMediaPlayer
-    Left = 101
-    Top = 80
+    Left = 157
+    Top = 86
     Width = 57
     Height = 30
     VisibleButtons = [btPlay, btPause]
@@ -130,11 +130,24 @@ object Form1: TForm1
     ParentDoubleBuffered = False
     TabOrder = 0
   end
+  object btn_abrir: TButton
+    Left = 62
+    Top = 86
+    Width = 75
+    Height = 19
+    Caption = 'Abrir'
+    TabOrder = 1
+    OnClick = btn_abrirClick
+  end
   object t_timer: TTimer
     Enabled = False
     Interval = 10
     OnTimer = t_timerTimer
     Left = 184
+    Top = 32
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 224
     Top = 32
   end
 end
